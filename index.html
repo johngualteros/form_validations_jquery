@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Incluir jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Incluir tu archivo de scripts jQuery -->
+    <script src="./main.js"></script>
+    <!-- Estilos básicos para resaltar campos inválidos -->
+    <style>
+        .invalid {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <main class="bg-gray-100 w-screen h-screen flex items-center justify-center">
+        <form id="contactForm" class="bg-white max-w-lg rounded-xl">
+            <div class=" bg-indigo-950 p-14 text-white text-center rounded-tl-xl rounded-tr-xl flex flex-col justify-center items-center">
+                <h1 class="font-black text-2xl mb-3">GET IN TOUCH</h1>
+                <p class="w-3/4 text-gray-300">if you need us you can always call us or fill in the form undermeath</p>
+            </div>
+            <div class="px-12 py-6">
+                <div class="mb-4 ">
+                    <label for="name" class="block text-sm text-gray-400 mb-2">Name</label>
+                    <input type="text" id="name" name="name" required class="w-full border-b-2 outline-none text-lg text-indigo-950 focus:border-b-indigo-950">
+                </div>
+                
+                <div class="mb-4">
+                    <label for="email" class="block text-sm text-gray-400 mb-2">Email</label>
+                    <input type="email" id="email" name="email" required class="w-full border-b-2 outline-none text-lg text-indigo-950 focus:border-b-indigo-950">
+                </div>
+                
+                <div class="mb-4">
+                    <label for="message" class="block text-sm text-gray-400 mb-2">Message</label>
+                    <textarea id="message" name="message" required class="w-full border-b-2 outline-none text-lg text-indigo-950 focus:border-b-indigo-950 resize-none"></textarea>
+                </div>
+                
+                <button type="submit" class="w-full bg-pink-600 rounded-2xl p-2 text-white font-bold">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
